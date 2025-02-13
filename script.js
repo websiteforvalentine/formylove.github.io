@@ -76,14 +76,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const heartCounter = document.getElementById("heart-counter");
   const timer = document.getElementById("timer");
   let count = 0;
-  let timeLeft = 30;
+  let timeLeft = 60;
 
   function createHeart() {
     const heart = document.createElement("div");
     heart.classList.add("heart");
     heart.innerHTML = "💖";
-    heart.style.left = Math.random() * (gameContainer.offsetWidth - 30) + "px";
-    heart.style.top = Math.random() * (gameContainer.offsetHeight - 30) + "px";
+    heart.style.left = Math.random() * (gameContainer.offsetWidth - 60) + "px";
+    heart.style.top = Math.random() * (gameContainer.offsetHeight - 60) + "px";
     gameContainer.appendChild(heart);
 
     heart.addEventListener("click", () => {
