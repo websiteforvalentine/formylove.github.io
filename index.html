@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="background-music" loop>
+    <source src="assets/John Legend - All of Me (Official Video).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <button id="music-toggle">🎵</button>
+
+  <!-- Sparkling Hearts Container -->
+  <div id="sparkles"></div>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">🏠 Home</a></li>
+      <li><a href="#valentine-proposal">💕 Valentine's Proposal</a></li>
+      <li><a href="#game">🎮 Game</a></li>
+      <li><a href="#note">💌 Note</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <h1 class="animated-header">Hello Saptarsish! 💖</h1>
+    <p>
+      Every moment spent with you is a precious memory. 
+    </p>
+    <p>
+    You are my sunshine on a rainy day, my rainbow after the storm.
+  </p>
+    <p> 
+    I love you more than words can express, and I hope this website brings a smile to your face!
+  </p>
+    <img src="assets/bunny-heart.gif" alt="Bunny with Heart" class="bunny-gif">
+    <div class="interactive-hearts">
+      <!-- Interactive hearts will be added dynamically -->
+    </div>
+  </section>
+
+  <!-- Valentine's Proposal Section -->
+  <section id="valentine-proposal" class="section">
+    <div class="proposal-container">
+      <h2>Will you be my Valentine?</h2>
+      <div class="buttons">
+        <button id="yesButton">Yes!</button>
+        <button id="noButton">No</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Games Section -->
+  <section id="game" class="section">
+    <h2>🎮 Game</h2>
+    <div id="game-container">
+      <p>Click the hearts to collect them!</p>
+      <p>Hearts Collected: <span id="heart-counter">0</span></p>
+      <p>Time Left: <span id="timer">30</span> seconds</p>
+    </div>
+  </section>
+
+  <!-- Love Note Section -->
+  <section id="love-note" class="section">
+    <h2>Hello My Love,</h2>
+    <p>
+      When we first met, I never imagined we'd come this far. Our relationship didn't start with fireworks, but over time, through shared experiences and understanding, we've built something truly special.
+    </p>
+    <p>
+      Taking that chance in March was a turning point. Now, as we face another period of distance, I find strength in the bond we've developed.
+    </p>
+    <p>
+      Thank you for being patient, for growing with me, and for making this journey worthwhile. I look forward to the moments we'll share when we're together again.
+    </p>
+    <p>
+      Yours,
+    </p>
+    <p>Heer 💖</p>
+  </section>
+
+  <!-- Celebratory Pop-Up (Hidden by Default) -->
+  <div id="celebrate-popup" class="popup">
+    <div class="popup-content">
+      <img src="assets/celebrate-bunny.gif" alt="Celebrating Bunny">
+      <h2>HUHUHAHA I knew you would say yes!💖</h2>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+
+  <!-- Loading Animation -->
+  <div id="loading">
+    <div class="heart-loader">💖</div>
+    <p>Loading our love...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
